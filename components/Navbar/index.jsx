@@ -5,7 +5,7 @@ import { FaSearch, FaArrowCircleRight, FaUser } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="flex lg:flex-row-reverse flex-col justify-between items-center h-16 px-9">
+    <nav className="flex lg:flex-row-reverse flex-col justify-between items-center h-16">
       <div className={classes.no_line_height}>
         <Link href="/" passHref>
           <Image src="/svg/logo.svg" width={80} height={80} alt="Logo" />
