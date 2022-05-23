@@ -19,13 +19,13 @@ const Navbar = () => {
         </Link>
         <ul className="list-none flex flex-row gap-16 cursor-pointer">
           <li className="flex flex-row gap-4 items-center duration-300 opacity-80 hover:opacity-100">
-            ثبت نام <FaUser />
+            ثبت نام <FaUser className="text-purple-400" />
           </li>
           <li className="flex flex-row gap-4 items-center cursor-pointer duration-300 opacity-80 hover:opacity-100">
-            ورود <FaArrowCircleRight />
+            ورود <FaArrowCircleRight className="text-purple-400" />
           </li>
           <li className="flex flex-row gap-4 items-center cursor-pointer duration-300 opacity-80 hover:opacity-100">
-            جستجو <FaSearch />
+            جستجو <FaSearch className="text-purple-400" />
           </li>
         </ul>
       </div>
