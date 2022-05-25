@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row items-center gap-16">
           <Link href="#" passHref>
-            <button className="bg-purple-400 text-white px-4 py-2 transition-all duration-300 rounded-lg sm:text-xs hover:bg-purple-500">
+            <button className="bg-purple-400 text-white transition-all duration-300 rounded-lg text-xs  px-1 py-2 md:px-4 md:py-2 md:text-lg hover:bg-purple-500">
               ایجاد فروشگاه رایگان
             </button>
           </Link>
