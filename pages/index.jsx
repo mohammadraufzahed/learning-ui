@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Features from "../components/Features";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <title>سامانه خرید و فروش</title>
       </Head>
       <Header />
+      <Features />
     </div>
   );
 }
