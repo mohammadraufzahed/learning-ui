@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Features from "../components/Features";
 import Header from "../components/Header";
+import SpecialSellsBox from "../components/SpecialSellsBox";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
       <Header />
       <Features />
+      <SpecialSellsBox />
     </div>
   );
 }
