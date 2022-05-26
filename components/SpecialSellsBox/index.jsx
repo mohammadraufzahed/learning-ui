@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Box from "../Box";
 import { FaStar, FaUser } from "react-icons/fa";
+import Stars from "../Stars";
 
 const fakeData = [
   {
@@ -60,16 +61,7 @@ const SpecialSellsItem = ({ item }) => {
         </div>
         <div>
           <div className="flex flex-row justify-between items-center gap-52">
-            <div className="flex flex-row gap-1">
-              {[0, 1, 2, 3, 4].map((key) => (
-                <FaStar
-                  key={key}
-                  className={
-                    key < item.stars ? "text-yellow-400" : "text-gray-400"
-                  }
-                />
-              ))}
-            </div>
+            <Stars stars={item.stars} />
             <div>
               <FaUser className="text-purple-400" />
             </div>
