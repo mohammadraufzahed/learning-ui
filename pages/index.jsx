@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CategoriesProduct from "../components/CategoriesProduct";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import SpecialSellsBox from "../components/SpecialSellsBox";
@@ -22,6 +23,7 @@ export default function Home() {
           ایجاد فروشگاه رایگان
         </button>
       </div>
+      <CategoriesProduct />
     </div>
   );
 }

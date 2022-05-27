@@ -15,7 +15,7 @@ const Box = ({ title, className, children }) => {
           <div className="w-3 h-[2px] bg-purple-400"></div>
         </div>
       </div>
-      <div className="my-5">{children}</div>
+      <div className="my-5 w-full">{children}</div>
     </div>
   );
 };
