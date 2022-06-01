@@ -10,6 +10,7 @@ import TopStoresBox from "../components/TopStoresBox";
 import ProductsPrize from "../components/ProductsPrize";
 import Box from "../components/Box";
 import BlogPostsBox from "../components/BlogPostsBox";
+import CustomersReview from "../components/CustomersReview";
 
 const fakeData = {
   badges: [
@@ -68,6 +69,7 @@ export default function Home() {
       />
       <ProductsPrize />
       <BlogPostsBox />
+      <CustomersReview />
     </div>
   );
 }
