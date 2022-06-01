@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import ResourcesBox from "../components/ResourcesBox";
 import SpecialSellsBox from "../components/SpecialSellsBox";
 import TopStoresBox from "../components/TopStoresBox";
+import ProductsPrize from "../components/ProductsPrize";
 
 const fakeData = {
   badges: [
@@ -63,6 +64,7 @@ export default function Home() {
         title="تخفیف های یک روزه با 40% تخفیف"
         button="محصولات با تخفیف"
       />
+      <ProductsPrize />
     </div>
   );
 }
