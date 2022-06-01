@@ -8,6 +8,8 @@ import ResourcesBox from "../components/ResourcesBox";
 import SpecialSellsBox from "../components/SpecialSellsBox";
 import TopStoresBox from "../components/TopStoresBox";
 import ProductsPrize from "../components/ProductsPrize";
+import Box from "../components/Box";
+import BlogPostsBox from "../components/BlogPostsBox";
 
 const fakeData = {
   badges: [
@@ -65,6 +67,7 @@ export default function Home() {
         button="محصولات با تخفیف"
       />
       <ProductsPrize />
+      <BlogPostsBox />
     </div>
   );
 }
