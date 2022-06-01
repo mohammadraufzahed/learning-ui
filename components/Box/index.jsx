@@ -3,7 +3,7 @@ import classes from "./style/index.module.scss";
 const Box = ({ title, className, children }) => {
   return (
     <div className={className + " flex flex-col items-center"}>
-      <div className={classes.title}>
+      <div className=" text-center">
         <span className="font-extrabold text-2xl text-gray-700">{title}</span>
         <div className="flex flex-row justify-center my-3 gap-[0.1em]">
           <div className="w-3 h-[2px] bg-purple-400"></div>
