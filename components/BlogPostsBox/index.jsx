@@ -60,7 +60,13 @@ const BlogPostsBox = () => {
 const PostItem = ({ post }) => {
   return (
     <div className="shadow-xl shadow-purple-400 w-max flex flex-col pb-5 rounded-xl">
-      <Image src={post.picture} width={393} height={269} alt={post.title} />
+      <Image
+        src={post.picture}
+        width={393}
+        height={269}
+        layout="responsive"
+        alt={post.title}
+      />
       <div className="w-[25vw] max-w-[393px] min-w-[393px] flex flex-col text-right gap-4 mt-6 px-5 text-gray-600">
         <span className="font-bold text-xl">{post.title}</span>
         <span className="font-normal text-base space tracking-wide text-center">
