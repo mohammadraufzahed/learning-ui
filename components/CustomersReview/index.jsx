@@ -29,18 +29,25 @@ const CustomersReview = () => {
 
 const ReviewItem = ({ review }) => {
   return (
-    <div className="w-[90vw] flex flex-col-reverse shadow-xl md:flex-row md:max-w-[640px] md:max-h-[389px] shadow-purple-400 rounded-xl">
-      <div className="px-6 text-right mt-5 text-gray-600">
-        <span className="font-extrabold text-xl">{review.name}</span>
-        <p className="mt-5 font-normal tracking-wider mb-4">{review.content}</p>
+    <div className="flex flex-col relative shadow-xl shadow-purple-400 md:flex-row-reverse rounded-3xl">
+      <div className={classes.profile_container + " w-14"}>
+        <Image
+          src={review.picture}
+          layout="fill"
+          className={classes.profile}
+          alt={review.name}
+          width={320}
+          height={389}
+        />
       </div>
-      <Image
-        className="md:w-[320px] md:h-[389px]"
-        src={review.picture}
-        width={320}
-        height={389}
-        alt={review.name}
-      />
+      <div className="w-max max-w-[320px] flex flex-col text-right my-6 px-4 text-gray-600 md:px-0 md:mx-6">
+        <span className="font-extrabold text-gray-600 text-xl md:mt-10">
+          {review.name}
+        </span>
+        <p className="font-medium text-base text-center mx-auto mt-3 tracking-wide md:mt-5">
+          {review.content}
+        </p>
+      </div>
     </div>
   );
 };

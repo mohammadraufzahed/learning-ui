@@ -1,0 +1,10 @@
+.profile_container {
+  width: min(320px, 320px, 320px);
+  height: min(389px, 389px, 389px);
+  position: relative;
+  .profile {
+    position: inherit;
+    width: 100% !important;
+    width: min(320px, 320px, 320px);
+  }
+}
