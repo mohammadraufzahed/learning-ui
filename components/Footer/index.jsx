@@ -53,7 +53,7 @@ const Footer = () => {
           <span className="cursor-pointer">ایجاد فروشگاه</span>
         </div>
       </div>
-      <div className="bg-purple-500 w-full col-span-3 py-5 mt-5 rounded-t-[15%] text-white font-extrabold">
+      <div className="bg-purple-500 w-full md:col-span-3 py-5 mt-5 rounded-t-[15%] text-white font-extrabold">
         تمامی حقوق برای وب سایت محفوظ می باشد 1401
       </div>
     </div>
