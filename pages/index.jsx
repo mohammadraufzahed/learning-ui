@@ -11,6 +11,7 @@ import ProductsPrize from "../components/ProductsPrize";
 import Box from "../components/Box";
 import BlogPostsBox from "../components/BlogPostsBox";
 import CustomersReview from "../components/CustomersReview";
+import Footer from "../components/Footer";
 
 const fakeData = {
   badges: [
@@ -70,6 +71,7 @@ export default function Home() {
       <ProductsPrize />
       <BlogPostsBox />
       <CustomersReview />
+      <Footer />
     </div>
   );
 }
