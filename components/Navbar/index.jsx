@@ -22,9 +22,11 @@ const Navbar = () => {
             <li className="flex flex-row gap-4 items-center duration-300 opacity-80 hover:opacity-100">
               ثبت نام <FaUser className="text-purple-400" />
             </li>
-            <li className="flex flex-row gap-4 items-center cursor-pointer duration-300 opacity-80 hover:opacity-100">
-              ورود <FaArrowCircleRight className="text-purple-400" />
-            </li>
+            <Link href="login" passHref>
+              <li className="flex flex-row gap-4 items-center cursor-pointer duration-300 opacity-80 hover:opacity-100">
+                ورود <FaArrowCircleRight className="text-purple-400" />
+              </li>
+            </Link>
             <li className="flex flex-row gap-4 items-center cursor-pointer duration-300 opacity-80 hover:opacity-100">
               جستجو <FaSearch className="text-purple-400" />
             </li>
