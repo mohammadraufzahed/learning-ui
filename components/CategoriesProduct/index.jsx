@@ -39,9 +39,9 @@ const CategoriesProduct = () => {
 
 const CategoriesItem = ({ item }) => {
   return (
-    <div className="flex flex-col items-center gap-3  drop-shadow-2xl">
+    <div className="flex flex-col items-center gap-3  drop-shadow-2xl text-center">
       {<item.icon className="text-purple-500 text-6xl" />}
-      <span className="text-gray-700 font-bold">{item.name}</span>
+      <span className="text-gray-700 font-bold mt-3">{item.name}</span>
     </div>
   );
 };

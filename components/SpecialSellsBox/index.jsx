@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Box from "../Box";
+import classes from "./style/index.module.scss";
 import { FaStar, FaUser } from "react-icons/fa";
 import Stars from "../Stars";
 
@@ -29,7 +30,7 @@ const fakeData = [
 const SpecialSellsBox = () => {
   return (
     <Box title="محصول و فروشگاه ویژه" className="w-full">
-      <div className="w-[100vw] h-max rounded-xl justify-center bg-gray-100 grid grid-cols-1 gap-x-10 gap-y-10 px-4 py-10 lg:grid-cols-2 lg:gap-y-0 lg:w-full items-center">
+      <div className="w-[100vw] h-max rounded-xl justify-center grid grid-cols-1 gap-x-10 gap-y-10 px-4 py-10 md:grid-cols-2 md:place-items-center lg:gap-y-0 lg:w-full items-center">
         {fakeData.map((item, key) => (
           <SpecialSellsItem item={item} key={key} />
         ))}
@@ -40,21 +41,21 @@ const SpecialSellsBox = () => {
 
 const SpecialSellsItem = ({ item }) => {
   return (
-    <div className="flex flex-row gap-4 mx-auto ">
-      <div>
-        <div className="flex flex-col text-right text-black font-bold text-base gap-10 py-4 px-4">
-          <span>{item.name}</span>
-          <span>{item.category}</span>
-          <span className="text-purple-400">{item.type}</span>
-          <span>
+    <div className="w-max flex flex-col-reverse items-center shadow-xl shadow-purple-400 bg-gray-100 rounded-xl">
+      <div className="w-full max-h-[470px]">
+        <div className="flex flex-col text-right text-black font-bold text-base py-4 px-4">
+          <span className="mb-3">{item.name}</span>
+          <span className="mb-3">{item.category}</span>
+          <span className="text-purple-400 mb-3">{item.type}</span>
+          <span className="mb-3">
             <span className="text-purple-400">{item.followers}</span>
             &nbsp;دنبال کننده
           </span>
-          <span>
-            <span className="text-purple-400">{item.comments}</span>
+          <span className="mb-3">
+            <span className="text-purple-400 mb-3">{item.comments}</span>
             &nbsp;نظر
           </span>
-          <span>
+          <span className="mb-3">
             <span className="text-purple-400">{item.products}</span>
             &nbsp;محصولات
           </span>
@@ -71,8 +72,15 @@ const SpecialSellsItem = ({ item }) => {
           </button>
         </div>
       </div>
-      <div>
-        <Image src={item.picture} width={393} height={475} alt={item.name} />
+      <div className={classes.picture_container}>
+        <Image
+          src={item.picture}
+          width={393}
+          height={475}
+          layout="fill"
+          className={classes.picture}
+          alt={item.name}
+        />
       </div>
     </div>
   );

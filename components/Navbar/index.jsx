@@ -12,13 +12,13 @@ const Navbar = () => {
             <Image src="/svg/logo.svg" width={80} height={80} alt="Logo" />
           </Link>
         </div>
-        <div className="flex flex-row items-center gap-16">
+        <div className="grid grid-cols-1 mt-4 items-center gap-y-6 gap-x-7 md:grid-cols-2 ">
           <Link href="#" passHref>
             <button className="bg-purple-400 text-white transition-all duration-300 rounded-lg text-xs  px-1 py-2 md:px-4 md:py-2 md:text-lg hover:bg-purple-500">
               ایجاد فروشگاه رایگان
             </button>
           </Link>
-          <ul className="list-none flex flex-row gap-16 cursor-pointer">
+          <ul className="grid grid-cols-3 w-full gap-x-6 place-items-center cursor-pointer">
             <li className="flex flex-row gap-4 items-center duration-300 opacity-80 hover:opacity-100">
               ثبت نام <FaUser className="text-purple-400" />
             </li>

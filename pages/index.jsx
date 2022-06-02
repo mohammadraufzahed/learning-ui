@@ -55,7 +55,7 @@ export default function Home() {
           {fakeData.badges.map((item, key) => (
             <div
               key={key}
-              className="flex w-[50vw] py-5 mx-auto flex-col justify-center items-center gap-2 shadow-xl shadow-purple-400 sm:w-max sm:px-16 sm:py-5 lg:px-10 lg:py-7"
+              className="flex w-full py-5 mx-auto flex-col justify-center items-center gap-2 shadow-xl shadow-purple-400 sm:w-max sm:px-16 sm:py-5 lg:px-10 lg:py-7"
             >
               <item.icon className="text-purple-400 text-6xl" />
               <span className="font-bold text-lg">{item.name}</span>

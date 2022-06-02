@@ -1,0 +1,10 @@
+.picture_container {
+  position: relative;
+  width: 393px;
+  max-width: 393px;
+  height: 475px;
+  max-height: 475px;
+  & .picture {
+    position: inherit;
+  }
+}
